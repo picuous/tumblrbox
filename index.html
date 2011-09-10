@@ -1,15 +1,54 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-  <title>tumblrbox - Lightbox effect for Tumblr - courtesy of Picuous</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Tumblrbox - Lightbox effect for Tumblr - courtesy of Picuous</title>
+  <meta name="description" content="Tumblrbox is a Lightbox effect for Tumblr">
+  <meta name="author" content="Picuous">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-  <h2>Code:</h2>
-  <textarea style='width: 520px; height: 80px'>
-<!-- Start of tumblrbox code -->
+
+<div id="container">
+  <header>
+    <h1>Tumblr.<span>box</span></h1>
+  </header>
+  <div id="main" role="main">
+    <h2 class="enable">Enable stunning Lightbox effects on my Tumblr blog</h2>
+    <div id="code_howto">
+      <p>Add the following code to your Tumblog:</p>
+      <textarea id="code">
+<!-- Start of Tumblrbox Code -->
 <script type='text/javascript'>
 document.write(unescape("%3Cscript src='http://picuous.github.com/tumblrbox/tumblrbox.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-<!-- End of tumblrbox code --></textarea>
+<!-- End of Tumblrbox Code --></textarea>
+      <ol id="howto">
+        <li>Access to <a href='http://www.tumblr.com/customize' target='_blank'>your tumblog</a> customization page
+        <li>Click on "Info" on the upper-left of the page</li>
+        <li>Copy/paste the above code in the "Description" area</li>
+        <li>Click on the "Save" button</li>
+      </ol>
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+</div> <!--! end of #container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="lib/jquery-1.6.2.min.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!-- end scripts-->
+
 </body>
 </html>
