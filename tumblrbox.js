@@ -71,6 +71,8 @@
           var $pics = $('.post .media a>img').parent();
           $pics.fancybox({
             'type': 'image',
+            'transitionIn': 'elastic',
+            'transitionOut': 'elastic',
             'opacity': true,
             'titleShow': false,
             'padding': 0,
