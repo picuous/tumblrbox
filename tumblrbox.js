@@ -23,7 +23,6 @@
   console.debug('tumblrbox');
   
   // Global variables
-  var PROTOCOL = (("https:" == document.location.protocol) ? "https" : "http");
   var otherlib = false;
   
   if(typeof jQuery != 'undefined') {
@@ -38,13 +37,13 @@
     var script;
     if(url.match(/\.js$/)) {
       script = document.createElement('script');
-      script.src = PROTOCOL + '://' + url;
+      script.src = url;
       script.type = 'text/javascript';
     } else {
       script = document.createElement('link');
       script.rel = 'stylesheet';
       script.type = 'text/css';
-      script.href = PROTOCOL + '://' + url;
+      script.href = url;
     }
     var head = document.getElementsByTagName('head')[0],
         done = false;
@@ -61,13 +60,13 @@
     };
     head.appendChild(script);
   }
-  load_file('ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', function() {
+  load_file('http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', function() {
     if(typeof jQuery=='undefined') {
       console.debug('Sorry, but jQuery wasn\'t able to load');
     } else {
       $ = jQuery.noConflict();
       console.debug('loaded '+$.fn.jquery);
-      load_file('yandex.st/jquery/fancybox/1.3.1/jquery.fancybox.js', function() {
+      load_file('http://picuous.github.com/tumblrbox/lib/jquery.fancybox.min.js', function() {
         console.debug('loaded fancybox');
           var $pics = $('.post .media a>img').parent();
           $pics.fancybox({
@@ -83,6 +82,6 @@
   });
   
   // Add CSS
-  load_file('fancybox.net/js/fancybox-1.3.4/jquery.fancybox-1.3.4.css');
+  load_file('http://picuous.github.com/tumblrbox/lib/jquery.fancybox.css');
   
 })();
