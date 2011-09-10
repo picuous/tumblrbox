@@ -227,7 +227,7 @@ h1 {
   filter: dropshadow(color=#000, offx=0, offy=1);
 }
 h1>span {
-  color: #f9d6a3;
+  color: #FBB03B;
 }
 
 .enable {
@@ -327,7 +327,7 @@ p, li, label {
 
 li>span {
   display: inline-block;
-  background: #fff;
+  background: #A5D674;
   color: #3C5A76;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -339,6 +339,12 @@ li>span {
   line-height: 20px;
   text-align: center;
   margin-right: 10px;
+  text-shadow: #769953 1px 1px 0;
+  border: 1px solid #769953;
+  -moz-box-shadow: 0 0 2px #fff;
+  -webkit-box-shadow: 0 0 2px #fff;
+  -o-box-shadow: 0 0 2px #fff;
+  box-shadow: 0 0 2px #fff;
 }
 
 footer {
