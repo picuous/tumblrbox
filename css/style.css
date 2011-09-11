@@ -231,7 +231,7 @@ header {
   color: #FBB03B;
 }
 #title:before, #title:after {
-  content: "tumblr.box";
+  content: attr(text-data);
   display: block;
   position: absolute;
   top: -52px;
