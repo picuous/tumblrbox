@@ -326,6 +326,7 @@ header {
   -o-box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
   box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
   border: none;
+  overflow: hidden;
 }
 
 #howto {
