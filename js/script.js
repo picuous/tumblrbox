@@ -2,19 +2,23 @@
  * Author: Picuous
  */
 
-$('#title').click(function() {
+$('#title').click(function(e) {
   $('#code_howto').fadeOut('fast', function() {
-    $('.enable').fadeIn('normal', runTitleAnimation);
+    $('#enable').fadeIn('normal', runTitleAnimation);
   });
-  return false;
+  e.preventDefault();
 });
 $('.enable').click(function() {
-  $(this).fadeOut('normal', function() {
+  $('#enable').fadeOut('normal', function() {
     $('#code_howto').fadeIn();
   });
 });
 $('#code').click(function() {
   $(this).focus().select();
+});
+$('#bookmarklet').click(function(e) {
+  alert("In order for this bookmarklet to be usable:\n1. Add it to your favorites\n2. Use it on your tumblog");
+  e.preventDefault();
 });
 
 function updateTitle(title) {

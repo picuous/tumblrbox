@@ -306,6 +306,11 @@ header {
   box-shadow: inset 0.5px 2px 8px #546d3b, 0 0 150px #fff;
 }
 
+#bookmarklet {
+  background: #78a;
+  padding: 1px 4px;
+}
+
 #code_howto {
   display: none;
 }
