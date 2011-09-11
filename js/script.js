@@ -15,7 +15,9 @@ function updateTitle(title) {
   var t = title.split('.');
   $('#title').attr('text-data', title.toLowerCase()).text(t[0]+'.').append($('<span>').text(t[1]));
 }
-updateTitle('tumblr.');
-setTimeout(function() {updateTitle('tumblr.b')}, 500);
-setTimeout(function() {updateTitle('tumblr.bo')}, 1000);
-setTimeout(function() {updateTitle('tumblr.box')}, 1500);
+setTimeout(function() {updateTitle('tumblr.bo')}, 500);
+setTimeout(function() {updateTitle('tumblr.b')}, 650);
+setTimeout(function() {updateTitle('tumblr.')}, 900);
+setTimeout(function() {updateTitle('tumblr.b')}, 1400);
+setTimeout(function() {updateTitle('tumblr.bo')}, 1650);
+setTimeout(function() {updateTitle('tumblr.box')}, 1900);
