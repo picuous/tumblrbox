@@ -215,19 +215,40 @@ header {
   padding-top: 30px;
 }
 
-h1 {
+#title {
+  position: relative;
   font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
   font-weight: bolder;
   font-size: 80px;
-  line-height: 80px;
+  line-height: 200px;
   text-transform: lowercase;
   letter-spacing: -2px;
-  color: #f7f8f9;
+  color: #e6ebf1;
   text-shadow: 0 1px 5px #000, 0 0 30px #fff, 0 0 100px #fff;
   filter: dropshadow(color=#000, offx=0, offy=1);
 }
-h1>span {
+#title span {
   color: #FBB03B;
+}
+#title:before, #title:after {
+  content: "tumblr.box";
+  display: block;
+  position: absolute;
+  top: -52px;
+  left: 0;
+  /*right: 0;*/
+  overflow: hidden;
+  color: #fff;
+  opacity: .3;
+  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=30)");
+}
+#title:before {
+  height: 100px;
+  text-shadow: none;
+}
+#title:after {
+  height: 102px;
+  text-shadow: 0 1px 5px #000;
 }
 
 .enable {
