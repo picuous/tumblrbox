@@ -79,7 +79,7 @@
           'padding': 0,
           'overlayShow': true
         });
-        console.debug($tumblr_pics.length+' tumblr pictures fancyboxed');
+        console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
         // Flickr doesn't allow displaying its content as in an iframe
         /*var $flickr_pics = $('a[href*="http://www.flickr.com/photos"]>img[src*="media.tumblr.com"]').parent();
@@ -92,7 +92,7 @@
           'padding': 0,
           'overlayShow': true
         });
-        console.debug($flickr_pics.length+' flickr pictures fancyboxed');*/
+        console.debug($flickr_pics.length+' flickr pictures tumblrboxed');*/
       });
     }
   });
