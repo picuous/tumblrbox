@@ -26,13 +26,16 @@
   </header>
   <div id="main" role="main">
     <div id="presentation">
-      <h2>Enable stunning Lightbox effects on my Tumblr blog within 5&prime;</h2>
-      <p class="button" id="enable">Enable tumblrbox &nbsp;&rarr;</p>
-      <p>or test-drive it using this bookmarklet:
+      <div class="focus">
+        <h2>Enable a Lightbox effect on your Tumblr blog in 2&prime;</h2>
+        <p id="note">Note: this service is neither maintained nor endorsed by Tumblr</p>
+        <p class="button" id="enable">Enable tumblrbox &nbsp;&rarr;</p>
+      </div>
+      <p>… or try it out using this bookmarklet:
         <a id="bookmarklet" class="focuslink" href="javascript:var%20e=document.createElement('script');e.src='http://picuous.github.com/tumblrbox/tumblrbox.js';e.type='text/javascript';document.getElementsByTagName('head')[0].appendChild(e);void(0)">tumblrbox!</a>
       </p>
     </div>
-    <div id="code_howto">
+    <div id="code_howto" class="focus">
       <p>
         <h2>Add the following code to my Tumblog:</h2>
         <textarea id="code">
@@ -43,7 +46,7 @@ document.write(unescape("%3Cscript src='http://picuous.github.com/tumblrbox/tumb
 <!-- End of Tumblrbox Code --></textarea>
       </p>
       <ol id="howto">
-        <li><span>1</span>Go to your tumblog customization page <a href='http://www.tumblr.com/customize' class='focuslink' target='_blank'>right here &raquo;</a></li>
+        <li><span>1</span>Go to your tumblog customization page <a href='http://www.tumblr.com/customize' class='focuslinkdark' target='_blank'>click here &raquo;</a></li>
         <li><span>2</span>Click on "Info" on the upper-left of the page</li>
         <li><span>3</span>Copy/paste the above code in the "Description" area</li>
         <li><span>4</span>Click on the "Save" button</li>
@@ -52,18 +55,16 @@ document.write(unescape("%3Cscript src='http://picuous.github.com/tumblrbox/tumb
         </li>
       </ol>
     </div>
-    <div id="further">
-      <h2>Want more from your pictures?</h2>
-      <p>Picuous makes pictures easy to share, automatically attributed, drive traffic to your website.
-      <br />
-      Picuous also tracks them wherever they are. Get advanced analytics of their usage on the web!</p>
+    <div id="further" class="focus">
+      <h2>Want more for your pictures?</h2>
+      <p id="note" class="left">Picuous makes pictures easy to share in a way that automatically attributes them and drives traffic to your website. Picuous also tracks them wherever they are. Get advanced analytics about your pictures, such as where they have been used and how many times they've been viewed!</p>
       <p>
-        <a href="http://picuous.com" class="button" id="picuous">Try it for free</a>
+        <a href="http://picuous.com" class="button" id="picuous">Take the tour</a>
       </p>
     </div>
   </div>
   <footer>
-    Copyright 2011, courtesy of <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a> &ndash; This service is not endorsed by Tumblr
+    &copy; 2011, brought to you by the fine folks at <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a>.
   </footer>
 </div> <!--! end of #container -->
 

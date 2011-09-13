@@ -206,6 +206,19 @@ html {
   text-align: center;
 }
 
+.focus {
+  background-color: #FBB03B;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  padding: 10px 20px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 *, a, a:visited {
   color: #fff;
   text-decoration: none;
@@ -256,6 +269,12 @@ header {
 
 h2 {
   text-shadow: 0 1px 5px #000;
+}
+
+#note {
+  text-decoration: italic;
+  font-weight: bold;
+  color: #CD5C00;
 }
 
 .button {
@@ -324,6 +343,12 @@ h2 {
   padding: 1px 4px;
 }
 
+.focuslinkdark {
+  background: #ED7500;
+  color: #FBB03B;
+  padding: 1px 4px;
+}
+
 #code_howto {
   display: none;
 }
@@ -367,7 +392,7 @@ p, li, label {
 li>span {
   display: inline-block;
   background: #0887F3;
-  color: #3C5A76;
+  color: white;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   -o-border-radius: 30px;
@@ -392,6 +417,10 @@ li>span {
 
 .right {
   text-align: right;
+}
+
+.left {
+  text-align: left;
 }
 
 footer {
