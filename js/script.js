@@ -3,14 +3,19 @@
  */
 
 $('#title').click(function(e) {
-  $('#code_howto').fadeOut('fast', function() {
-    $('#enable').fadeIn('normal', runTitleAnimation);
+  $('#code_howto:visible, #further:visible').fadeOut('fast', function() {
+    $('#presentation').fadeIn('normal', runTitleAnimation);
   });
   e.preventDefault();
 });
-$('.enable').click(function() {
-  $('#enable').fadeOut('normal', function() {
+$('#enable').click(function() {
+  $('#presentation').fadeOut('normal', function() {
     $('#code_howto').fadeIn();
+  });
+});
+$('#done').click(function() {
+  $('#code_howto').fadeOut('normal', function() {
+    $('#further').fadeIn();
   });
 });
 $('#code').click(function() {

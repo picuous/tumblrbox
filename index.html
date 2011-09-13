@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Tumblrbox - Lightbox effect for Tumblr - courtesy of Picuous</title>
+  <title>Tumblrbox - Lightbox effect for Tumblr</title>
   <meta name="description" content="Tumblrbox is a Lightbox effect for Tumblr">
   <meta name="keywords" content="tumblr,lightbox,fancybox,picuous">
   <meta name="author" content="Picuous">
@@ -22,33 +22,48 @@
 <div id="container">
   <a href="http://github.com/picuous/tumblrbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
   <header>
-    <a id="title" text-data="tumblr.box" href="http://picuous.github.com/tumblrbox/">Tumblr.<span>box</span></a>
+    <a id="title" text-data="tumblr.box" href="index.html">Tumblr.<span>box</span></a>
   </header>
   <div id="main" role="main">
-    <div id="enable">
-      <h2 class="enable">Enable stunning Lightbox effects on my Tumblr blog</h2>
+    <div id="presentation">
+      <h2>Enable stunning Lightbox effects on my Tumblr blog within 5&prime;</h2>
+      <p class="button" id="enable">Enable tumblrbox &nbsp;&rarr;</p>
       <p>or test-drive it using this bookmarklet:
-        <a id="bookmarklet" href="javascript:var%20e=document.createElement('script');e.src='http://picuous.github.com/tumblrbox/tumblrbox.js';e.type='text/javascript';document.getElementsByTagName('head')[0].appendChild(e);void(0)">tumblrbox!</a>
+        <a id="bookmarklet" class="focuslink" href="javascript:var%20e=document.createElement('script');e.src='http://picuous.github.com/tumblrbox/tumblrbox.js';e.type='text/javascript';document.getElementsByTagName('head')[0].appendChild(e);void(0)">tumblrbox!</a>
       </p>
     </div>
     <div id="code_howto">
-      <label for="code">Add the following code to your Tumblog:</label>
-      <textarea id="code">
+      <p>
+        <h2>Add the following code to my Tumblog:</h2>
+        <textarea id="code">
 <!-- Start of Tumblrbox Code -->
 <script type='text/javascript'>
 document.write(unescape("%3Cscript src='http://picuous.github.com/tumblrbox/tumblrbox.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <!-- End of Tumblrbox Code --></textarea>
+      </p>
       <ol id="howto">
-        <li><span>1</span>Go to <a href='http://www.tumblr.com/customize' target='_blank'>your tumblog</a> customization page
+        <li><span>1</span>Go to your tumblog customization page <a href='http://www.tumblr.com/customize' class='focuslink' target='_blank'>right here &raquo;</a></li>
         <li><span>2</span>Click on "Info" on the upper-left of the page</li>
         <li><span>3</span>Copy/paste the above code in the "Description" area</li>
         <li><span>4</span>Click on the "Save" button</li>
+        <li class="right">
+          <p class="button" id="done">I&rsquo;m done &nbsp;&rarr;</p>
+        </li>
       </ol>
+    </div>
+    <div id="further">
+      <h2>Want more from your pictures?</h2>
+      <p>Picuous makes pictures easy to share, automatically attributed, drive traffic to your website.
+      <br />
+      Picuous also tracks them wherever they are. Get advanced analytics of their usage on the web!</p>
+      <p>
+        <a href="http://picuous.com" class="button" id="picuous">Try it for free</a>
+      </p>
     </div>
   </div>
   <footer>
-    Copyright 2011, courtesy of <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a>
+    Copyright 2011, courtesy of <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a> &ndash; This service is not endorsed by Tumblr
   </footer>
 </div> <!--! end of #container -->
 

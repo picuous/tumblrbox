@@ -202,7 +202,7 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 html {
-  background: #3C5A76;
+  background: #ED7500;
   text-align: center;
 }
 
@@ -213,6 +213,10 @@ html {
 
 header {
   padding-top: 30px;
+}
+
+#main {
+  margin-bottom: 50px;
 }
 
 #title {
@@ -250,12 +254,15 @@ header {
   text-shadow: 0 1px 5px #000;
 }
 
-.enable {
+h2 {
+  text-shadow: 0 1px 5px #000;
+}
+
+.button {
   display: inline-block;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
-  margin: 50px 0;
   background: linear-gradient(#A5D674, #769953);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA5D674', endColorstr='#FF769953')";
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFA5D674', endColorstr='#FF769953');
@@ -288,7 +295,7 @@ header {
   -o-transition: all 50ms ease;
   transition: all 50ms ease;
 }
-.enable:hover {
+.button:hover {
   background: linear-gradient(#99C66B, #6B8B4B);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF99C66B', endColorstr='#FF6B8B4B')";
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF99C66B', endColorstr='#FF6B8B4B');
@@ -299,15 +306,21 @@ header {
   background: linear-gradient(#99C66B, #6B8B4B);
   text-shadow: #546D3B 0 -1px 0;
 }
-.enable:active {
+.button:active {
   -moz-box-shadow: inset 0.5px 2px 8px #546d3b, 0 0 150px #fff;
   -webkit-box-shadow: inset 0.5px 2px 8px #546d3b, 0 0 150px #fff;
   -o-box-shadow: inset 0.5px 2px 8px #546d3b, 0 0 150px #fff;
   box-shadow: inset 0.5px 2px 8px #546d3b, 0 0 150px #fff;
+  text-shadow: #445D2B 0 -1px 0;
 }
 
-#bookmarklet {
-  background: #78a;
+#enable {
+  margin: 50px 0;
+}
+
+.focuslink {
+  background: #FBB03B;
+  color: #CD5C00;
   padding: 1px 4px;
 }
 
@@ -326,10 +339,10 @@ header {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
-  -webkit-box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
-  -o-box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
-  box-shadow: inset 0.5px 2px 8px #3C5A76, 0 0 150px #fff;
+  -moz-box-shadow: inset 0.5px 2px 8px #ED7500;
+  -webkit-box-shadow: inset 0.5px 2px 8px #ED7500;
+  -o-box-shadow: inset 0.5px 2px 8px #ED7500;
+  box-shadow: inset 0.5px 2px 8px #ED7500;
   border: none;
   overflow: hidden;
 }
@@ -373,6 +386,14 @@ li>span {
   box-shadow: 0 0 2px #fff;
 }
 
+#further {
+  display: none;
+}
+
+.right {
+  text-align: right;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -380,8 +401,8 @@ footer {
   right: 30%;
   padding: 10px;
   font-size: 11px;
-  color: #bbc;
-  border-top: 1px solid #4C6A86;
+  color: #ecc;
+  border-top: 1px solid #FBB03B;
 }
 
 
