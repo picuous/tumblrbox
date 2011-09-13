@@ -81,6 +81,11 @@
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
+        // Make it more responsive over click intents
+        $tumblr_pics.hover(function() {
+          (new Image()).src = $(this).attr('href');
+        });
+        
         // Flickr doesn't allow displaying its content as in an iframe
         /*var $flickr_pics = $('a[href*="http://www.flickr.com/photos"]>img[src*="media.tumblr.com"]').parent();
         $flickr_pics.fancybox({
