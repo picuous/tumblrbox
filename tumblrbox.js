@@ -75,9 +75,10 @@
           'transitionIn': 'elastic',
           'transitionOut': 'elastic',
           'opacity': true,
-          'titleShow': false,
           'padding': 0,
-          'overlayShow': true
+          'overlayOpacity':	0.95,
+          'overlayColor': '#111',
+          'showCloseButton': false
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
