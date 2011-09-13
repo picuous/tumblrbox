@@ -68,15 +68,36 @@
       console.debug('loaded '+$.fn.jquery);
       load_file('http://picuous.github.com/tumblrbox/lib/jquery.fancybox.min.js', function() {
         console.debug('loaded fancybox');
-          var $pics = $('.post .media a>img').parent();
-          $pics.fancybox({
-            'type': 'image',
-            'opacity': true,
-            'titleShow': false,
-            'padding': 0,
-            'margin': 0
-          });
-          console.debug($pics.length+' pictures fancyboxed');
+        
+        var $tumblr_pics = $('a[href*="http://www.tumblr.com/photo"]>img[src*="media.tumblr.com"]').parent();
+        $tumblr_pics.fancybox({
+          'type': 'image',
+          'transitionIn': 'elastic',
+          'transitionOut': 'elastic',
+          'opacity': true,
+          'titleShow': false,
+          'padding': 0,
+          'overlayShow': true
+        });
+        console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
+        
+        // Make it more responsive over click intents
+        $tumblr_pics.hover(function() {
+          (new Image()).src = $(this).attr('href');
+        });
+        
+        // Flickr doesn't allow displaying its content as in an iframe
+        /*var $flickr_pics = $('a[href*="http://www.flickr.com/photos"]>img[src*="media.tumblr.com"]').parent();
+        $flickr_pics.fancybox({
+          'type': 'iframe',
+          'transitionIn': 'elastic',
+          'transitionOut': 'elastic',
+          'opacity': true,
+          'titleShow': false,
+          'padding': 0,
+          'overlayShow': true
+        });
+        console.debug($flickr_pics.length+' flickr pictures tumblrboxed');*/
       });
     }
   });
