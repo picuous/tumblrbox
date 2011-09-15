@@ -459,8 +459,8 @@ li>span {
 footer {
   position: fixed;
   bottom: 0;
-  left: 30%;
-  right: 30%;
+  left: 0;
+  right: 0;
   padding: 10px;
   font-size: 11px;
   color: #ecc;
