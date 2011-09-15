@@ -273,7 +273,7 @@ header {
   background: linear-gradient(#FBB03B 20%,#F29520);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520')";
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FBB03B), color-stop(100%, #ED7500));
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FBB03B), color-stop(100%, #F29520));
   background: -webkit-linear-gradient(#FBB03B 20%,#F29520);
   background: -moz-linear-gradient(#FBB03B 20%,#F29520);
   background: -o-linear-gradient(#FBB03B 20%,#F29520);
