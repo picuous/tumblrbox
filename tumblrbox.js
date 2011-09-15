@@ -84,8 +84,8 @@
             $('#fancybox-title').after('<a id="powered_by_tumblrbox" href="http://picuous.github.com/tumblrbox" target="_blank"><img src="http://picuous.github.com/tumblrbox/css/img/powered_by.png" alt="powered by Tumblrbox" /></a>');
             setTimeout(function() { $('#powered_by_tumblrbox').fadeIn() }, 1000);
           },
-          'onClosed': function() {
-            $('#powered_by_tumblrbox').remove();
+          'onCleanup': function() {
+            $('#powered_by_tumblrbox').fadeOut(100);
           }
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
