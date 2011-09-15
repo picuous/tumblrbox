@@ -79,7 +79,10 @@
           'overlayOpacity':	0.95,
           'overlayColor': '#111',
           'showCloseButton': false,
-          'hideOnContentClick': true
+          'hideOnContentClick': true,
+          'onStart': function() {
+            $('#fancybox-title').after('<div id="powered_by_tumblrbox"></div>');
+          }
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
