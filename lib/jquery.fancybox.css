@@ -384,20 +384,21 @@
 
 #powered_by_tumblrbox {
   display: none;
-  bottom: -39px;
-  display: block;
   position: absolute;
+  bottom: -39px;
   z-index: 1102;
   padding-top: 5px;
-  text-align: right;
-  width: 100%;
-  height: 32px;
-}
-#powered_by_tumblrbox, #powered_by_tumblrbox a {
   vertical-align: baseline;
+  
   font-family: arial;
   font: normal normal bold 17px/normal HelveticaNeue, Helvetica, Arial, sans-serif;
+  text-align: right;
   color: #fff;
   text-shadow: #000 0px 4px 30px;
   text-rendering: optimizelegibility;
+  text-decoration: none;
+  
+  background: transparent url(css/img/powered_by.png);
+  width: 115px;
+  height: 32px;
 }
