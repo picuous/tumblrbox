@@ -379,5 +379,5 @@
 }
 
 #fancybox-img {
-  max-width: auto;
+  max-width: initial;
 }
