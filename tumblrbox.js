@@ -79,7 +79,16 @@
           'overlayOpacity':	0.95,
           'overlayColor': '#111',
           'showCloseButton': false,
-          'hideOnContentClick': true
+          'hideOnContentClick': true,
+          'onComplete': function() {
+            $('#fancybox-title').after('<a id="powered_by_tumblrbox" href="http://picuous.github.com/tumblrbox" target="_blank"><img src="http://picuous.github.com/tumblrbox/css/img/powered_by.png" alt="powered by Tumblrbox" /></a>');
+            setTimeout(function() { $('#powered_by_tumblrbox').fadeIn() }, 500);
+          },
+          'onCleanup': function() {
+            $('#powered_by_tumblrbox').fadeOut(100, function() {
+              $(this).remove();
+            });
+          }
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
