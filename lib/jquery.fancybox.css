@@ -394,11 +394,10 @@
   font-family: arial;
   font: normal normal bold 17px/normal HelveticaNeue, Helvetica, Arial, sans-serif;
   text-align: right;
-  color: #fff;
+  color: #fff !important;
   text-shadow: #000 0px 4px 30px;
   text-rendering: optimizelegibility;
   text-decoration: none;
   
-  width: 115px;
   height: 32px;
 }
