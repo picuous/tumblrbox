@@ -206,19 +206,6 @@ html {
   text-align: center;
 }
 
-.focus {
-  background-color: #FBB03B;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  padding: 10px 20px;
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 *, a, a:visited {
   color: #fff;
   text-decoration: none;
@@ -265,6 +252,32 @@ header {
 #title:after {
   height: 102px;
   text-shadow: 0 1px 5px #000;
+}
+
+.focus {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  padding: 10px 20px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  -moz-box-shadow: #842 0 1px 15px;
+  -webkit-box-shadow: #842 0 1px 15px;
+  -o-box-shadow: #842 0 1px 15px;
+  box-shadow: #842 0 5px 15px;
+  
+  background-color: #FBB03B;
+  background: linear-gradient(#FBB03B 20%,#F29520);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520')";
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FBB03B), color-stop(100%, #ED7500));
+  background: -webkit-linear-gradient(#FBB03B 20%,#F29520);
+  background: -moz-linear-gradient(#FBB03B 20%,#F29520);
+  background: -o-linear-gradient(#FBB03B 20%,#F29520);
+  background: linear-gradient(#FBB03B 20%,#F29520);
 }
 
 h2 {
