@@ -383,6 +383,7 @@
 }
 
 #powered_by_tumblrbox {
+  display: none;
   bottom: -39px;
   display: block;
   position: absolute;
@@ -393,7 +394,6 @@
   height: 32px;
 }
 #powered_by_tumblrbox, #powered_by_tumblrbox a {
-  display: none;
   vertical-align: baseline;
   font-family: arial;
   font: normal normal bold 17px/normal HelveticaNeue, Helvetica, Arial, sans-serif;
