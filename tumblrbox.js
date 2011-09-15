@@ -81,7 +81,7 @@
           'showCloseButton': false,
           'hideOnContentClick': true,
           'onStart': function() {
-            $('#fancybox-title').after('<div id="powered_by_tumblrbox"></div>');
+            $('#fancybox-title').after('<div id="powered_by_tumblrbox">Powered by <a href="http://picuous.github.com/tumblrbox" target="_blank">Tumblrbox</a></div>');
           }
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
