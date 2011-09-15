@@ -385,7 +385,8 @@
 #powered_by_tumblrbox {
   display: none;
   position: absolute;
-  bottom: -39px;
+  right: 0;
+  bottom: -35px;
   z-index: 1102;
   padding-top: 5px;
   vertical-align: baseline;
