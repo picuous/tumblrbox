@@ -78,7 +78,8 @@
           'padding': 0,
           'overlayOpacity':	0.95,
           'overlayColor': '#111',
-          'showCloseButton': false
+          'showCloseButton': false,
+          'hideOnContentClick': true
         });
         console.debug($tumblr_pics.length+' tumblr pictures tumblrboxed');
         
