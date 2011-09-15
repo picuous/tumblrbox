@@ -377,3 +377,7 @@
   text-shadow: black 0px 4px 30px;
   text-rendering: optimizelegibility;
 }
+
+#fancybox-img {
+  max-width: auto;
+}
