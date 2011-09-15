@@ -456,6 +456,10 @@ li>span {
   text-align: left;
 }
 
+.addthis_toolbox {
+  color: #000;
+}
+
 footer {
   position: fixed;
   bottom: 0;
