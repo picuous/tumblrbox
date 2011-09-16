@@ -22,13 +22,17 @@
   }
   console.debug('tumblrbox');
   
+  // Track - http://remysharp.com/2009/02/27/analytics-for-bookmarklets-injected-scripts/
+  function gaTrack(g,h,i){function c(e,j){return e+Math.floor(Math.random()*(j-e))}var f=1000000000,k=c(f,9999999999),a=c(10000000,99999999),l=c(f,2147483647),b=(new Date()).getTime(),d=window.location,m=new Image(),n='http://www.google-analytics.com/__utm.gif?utmwv=1.3&utmn='+k+'&utmsr=-&utmsc=-&utmul=-&utmje=0&utmfl=-&utmdt=-&utmhn='+h+'&utmr='+d+'&utmp='+i+'&utmac='+g+'&utmcc=__utma%3D'+a+'.'+l+'.'+b+'.'+b+'.'+b+'.2%3B%2B__utmb%3D'+a+'%3B%2B__utmc%3D'+a+'%3B%2B__utmz%3D'+a+'.'+b+'.2.2.utmccn%3D(referral)%7Cutmcsr%3D'+d.host+'%7Cutmcct%3D'+d.pathname+'%7Cutmcmd%3Dreferral%3B%2B__utmv%3D'+a+'.-%3B';m.src=n}
+  gaTrack('UA-19333053-5', 'picuous.github.com', '/tumblrbox/tumblrbox.js');
+  
   // Global variables
   var otherlib = false;
   
   if(typeof jQuery != 'undefined') {
-    console.debug('This page is already using jQuery v'+jQuery.fn.jquery);
+    //console.debug('This page is already using jQuery v'+jQuery.fn.jquery);
   } else if (typeof $ == 'function') {
-    console.debug('This page is using another $ library');
+    //console.debug('This page is using another $ library');
     otherlib = true;
   }
   
