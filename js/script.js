@@ -46,4 +46,4 @@ function runTitleAnimation() {
   setTimeout(function() {updateTitle('tumblr.bo')}, 1650);
   setTimeout(function() {updateTitle('tumblr.box')}, 1900);
 }
-runTitleAnimation();
+//runTitleAnimation();

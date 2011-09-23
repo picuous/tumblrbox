@@ -202,21 +202,70 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 
 html {
-  background: #ED7500;
+  /*background: #ED7500;*/
   text-align: center;
 }
 
-*, a, a:visited {
-  color: #fff;
+a, a:visited {
+  color: #000;
   text-decoration: none;
 }
 
 header {
+  height: 55px;
+  background: linear-gradient(#FBB03B 20%, #ED7500);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFED7500')";
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFED7500');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FBB03B), color-stop(100%, #ED7500));
+  background: -webkit-linear-gradient(#FBB03B 20%, #ED7500);
+  background: -moz-linear-gradient(#FBB03B 20%, #ED7500);
+  background: -o-linear-gradient(#FBB03B 20%, #ED7500);
+  background: linear-gradient(#FBB03B 20%, #ED7500);
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  position: relative;
+}
+#header {
+  position: relative;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header h1 {
+  margin-top: 0;
+  color: white;
+  line-height: 0;
+  display: inline;
+  float: left;
+}
+#header img {
+  margin-top: 10px;
+}
+#header span {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+#header nav {
+  line-height: 55px;
+  float: right;
+}
+#header .button {
+  line-height: 12px;
+}
+
+#container > h1 {
   padding-top: 30px;
 }
 
 #main {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 #title {
@@ -224,7 +273,7 @@ header {
   font-family: "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
   font-weight: bolder;
   font-size: 80px;
-  line-height: 200px;
+  line-height: 100px;
   text-transform: lowercase;
   letter-spacing: -2px;
   color: #e6ebf1;
@@ -238,7 +287,7 @@ header {
   content: attr(text-data);
   display: block;
   position: absolute;
-  top: -52px;
+  top: -2px;
   left: 0;
   overflow: hidden;
   color: #fff;
@@ -246,48 +295,28 @@ header {
   filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=30)");
 }
 #title:before {
-  height: 100px;
+  height: 50px;
   text-shadow: none;
 }
 #title:after {
-  height: 102px;
+  height: 52px;
   text-shadow: 0 1px 5px #000;
 }
 
-.focus {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  padding: 10px 20px;
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  -moz-box-shadow: #842 0 1px 15px;
-  -webkit-box-shadow: #842 0 1px 15px;
-  -o-box-shadow: #842 0 1px 15px;
-  box-shadow: #842 0 5px 15px;
-  
-  background-color: #FBB03B;
-  background: linear-gradient(#FBB03B 20%,#F29520);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520')";
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFBB03B', endColorstr='#FFF29520');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #FBB03B), color-stop(100%, #F29520));
-  background: -webkit-linear-gradient(#FBB03B 20%,#F29520);
-  background: -moz-linear-gradient(#FBB03B 20%,#F29520);
-  background: -o-linear-gradient(#FBB03B 20%,#F29520);
-  background: linear-gradient(#FBB03B 20%,#F29520);
+#container > #subtitle {
+  margin-bottom: 50px;
+  padding-top: 0;
 }
 
-h2 {
-  text-shadow: 0 1px 5px #000;
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #404040;
 }
 
 #note {
   text-decoration: italic;
   font-weight: bold;
-  color: #CD5C00;
 }
 
 .button {
@@ -318,6 +347,7 @@ h2 {
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
+  color: #fff !important;
   text-shadow: #05589E 0 -1px 0;
   position: relative;
   -webkit-transition: all 50ms ease;
@@ -350,7 +380,7 @@ h2 {
   line-height: 30px;
 }
 
-#done, #picuous {
+.bigbutton {
   font-size: 16px;
   line-height: 20px;
 }
@@ -358,12 +388,6 @@ h2 {
 .focuslink {
   background: #FBB03B;
   color: #CD5C00;
-  padding: 1px 4px;
-}
-
-.focuslinkdark {
-  background: #ED7500;
-  color: #FBB03B;
   padding: 1px 4px;
 }
 
@@ -423,7 +447,7 @@ li>span {
 }
 
 #further img {
-  margin: 0px 10px;
+  margin-bottom: 40px;
 }
 
 .feature {
@@ -465,9 +489,31 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  background: #e6e6e6;
+}
+#footer {
+  position: relative;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
-  font-size: 11px;
-  color: #ecc;
+  text-align: left;
+}
+footer #note {
+  font-size: 15px;
+  line-height: 0;
+}
+footer #copy {
+  font-size: 12px;
+  line-height: 0;
+  padding-top: 10px;
+}
+footer, footer a {
+  color: #766;
+}
+footer #twitter {
+  float: right;
+  line-height: 52px;
 }
 
 

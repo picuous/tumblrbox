@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Tumblrbox - Lightbox effect for Tumblr</title>
-  <meta name="description" content="Tumblrbox is a Lightbox effect for Tumblr">
-  <meta name="keywords" content="tumblr,lightbox,fancybox,picuous">
+  <title>Tumblrbox - Lightbox for Tumblr</title>
+  <meta name="description" content="Tumblrbox is an easy-to-implement Lightbox effect for Tumblr">
+  <meta name="keywords" content="tumblr,lightbox,fancybox,zoom,picuous">
   <meta name="author" content="Picuous">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,7 +31,7 @@
   </script>
   
   <meta property='og:site_name' content='Tumblrbox' />
-  <meta property='og:title' content='Tumblrbox - Enable a Lightbox effect on your Tumblr blog in 2′' />
+  <meta property='og:title' content='Tumblrbox is an easy-to-implement Lightbox effect for Tumblr' />
   <meta property='og:type' content='website' />
   <meta property='og:url' content='http://picuous.github.com/tumblrbox/' />
   <meta property='og:image' content='http://picuous.github.com/tumblrbox/css/img/logo.png' />
@@ -42,32 +42,36 @@
 <body>
 
 <div id="container">
-  <a href="http://github.com/picuous/tumblrbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub"></a>
   <header>
-    <a id="title" text-data="tumblr.box" href="index.html">Tumblr.<span>box</span></a>
+    <div id="header">
+      <h1>
+        <a href="http://picuous.com" alt="Picuous" title="Your pictures, viral">
+          <img src="css/img/picuous.png" width="123" heihgt="35" alt="Picuous" />
+          <span>&#946;eta</span>
+        </a>
+      </h1>
+      <nav>
+        <a class="button" href="http://picuous.com/tour">Want more? Make your pictures viral with Picuous</a>
+      </nav>
+    </div>
   </header>
+  <h1><a id="title" text-data="tumblr.box" href="index.html">Tumblr.<span>box</span></a></h1>
+  <h1 id="subtitle">Easy Lightbox effect for Tumblr</h1>
   <div id="main" role="main">
     <div id="presentation">
-      <div class="focus">
-        <h2>Enable a Lightbox effect on your Tumblr blog in 2&prime;</h2>
-        <p id="note">Note: this service is neither maintained nor endorsed by Tumblr</p>
-        <p class="button" id="enable">Enable tumblrbox &nbsp;&rarr;</p>
-        <!-- AddThis Button BEGIN -->
-        <div class="addthis_toolbox addthis_default_style">
-          <a class="addthis_button_preferred_1"></a>
-          <a class="addthis_button_preferred_2"></a>
-          <a class="addthis_button_preferred_3"></a>
-          <a class="addthis_button_preferred_4"></a>
-          <a class="addthis_button_compact"></a>
-          <a class="addthis_counter addthis_bubble_style"></a>
-        </div>
-        <!-- AddThis Button END -->
+      <p class="button" id="enable">Enable tumblrbox &nbsp;&rarr;</p>
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
       </div>
-      <p>… or try it out using this bookmarklet:
-        <a id="bookmarklet" class="focuslink" href="javascript:var%20e=document.createElement('script');e.src='http://picuous.github.com/tumblrbox/tumblrbox.js';e.type='text/javascript';document.getElementsByTagName('head')[0].appendChild(e);void(0)">tumblrbox!</a>
-      </p>
+      <!-- AddThis Button END -->
     </div>
-    <div id="code_howto" class="focus">
+    <div id="code_howto">
       <p>
         <h2>Add the following code to my Tumblog:</h2>
         <textarea id="code">
@@ -78,39 +82,27 @@ document.write(unescape("%3Cscript src='http://picuous.github.com/tumblrbox/tumb
 <!-- End of Tumblrbox Code --></textarea>
       </p>
       <ol id="howto">
-        <li><span>1</span>Go to your tumblog customization page <a href='http://www.tumblr.com/customize' class='focuslinkdark' target='_blank'>click here &raquo;</a></li>
+        <li><span>1</span>Go to your tumblog customization page <a href='http://www.tumblr.com/customize' class='focuslink' target='_blank'>click here &raquo;</a></li>
         <li><span>2</span>Click on "Info" on the upper-left of the page</li>
         <li><span>3</span>Copy/paste the above code in the "Description" area</li>
         <li><span>4</span>Click on the "Save" button</li>
         <li class="right">
-          <p class="button" id="done">I&rsquo;m done &nbsp;&rarr;</p>
+          <p class="button bigbutton" id="done">I&rsquo;m done &nbsp;&rarr;</p>
         </li>
       </ol>
     </div>
-    <div id="further" class="focus">
-      <h2>Want more for your pictures? Try <a href="http://picuous.com"/>Picuous</a>!</h2>
-      <p class="feature right">
-        <img src="css/img/analytics.png" title="Analytics for your pics." class="fright" />
-        <span class="feature_title">Analytics for your pics.</span>
-        Know when and where your pictures have been embedded, viewed, liked or shared. Understand who likes you!
-      </p>
-      <p class="feature left">
-        <img src="css/img/linked.png" title="Automatic links." class="fleft" />
-        <span class="feature_title">Automatic links.</span>
-        Your pictures spread on the web but are automagically linked to you and your website. It's an easy way to drive traffic and SEO!
-      </p>
-      <p class="feature right">
-        <img src="css/img/copy.png" title="5&prime; setup" class="fright" />
-        <span class="feature_title">5&prime; setup.</span>
-        Copy-paste one line of JavaScript code in your header (no technical skills required!), and you're good to go. Now back to optimizing your website.
-      </p>
-      <p>
-        <a href="http://picuous.com" class="button" id="picuous">Take the tour</a>
-      </p>
+    <div id="further">
+      <img src="css/img/tick.png" width="194" height="194" />
+      <h2>Want more?</h2>
+      <a class="button bigbutton" href="http://picuous.com">Make your pictures viral with Picuous</a>
     </div>
   </div>
   <footer>
-    &copy; 2011, brought to you by the fine folks at <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a>.
+    <div id="footer">
+      <a id="twitter" href="http://twitter.com/tumblrbox">Follow us on twitter</a>
+      <p id="note">Note: this service is neither maintained nor endorsed by Tumblr</p>
+      <p id="copy">&copy; 2011, brought to you by the fine folks at <a href="http://picuous.com" title="Transform your pictures into promotional vehicles">Picuous</a>.</p>
+    </div>
   </footer>
 </div> <!--! end of #container -->
 
