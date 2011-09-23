@@ -266,6 +266,7 @@ header {
 
 #main {
   margin-bottom: 100px;
+  position: relative;
 }
 
 #title {
@@ -482,6 +483,8 @@ li>span {
 
 .addthis_toolbox {
   color: #000;
+  margin: 50px auto 0;
+  width: 245px;
 }
 
 footer {
@@ -511,9 +514,9 @@ footer #copy {
 footer, footer a {
   color: #766;
 }
-footer #twitter {
+footer #twitter, .twitter-follow-button {
   float: right;
-  line-height: 52px;
+  padding-top: 16px;
 }
 
 
