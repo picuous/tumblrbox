@@ -386,9 +386,8 @@
   display: none;
   position: absolute;
   right: 0;
-  bottom: -35px;
+  top: -25px;
   z-index: 1102;
-  padding-top: 5px;
   vertical-align: baseline;
   
   font-family: arial;
@@ -399,5 +398,5 @@
   text-rendering: optimizelegibility;
   text-decoration: none;
   
-  height: 32px;
+  height: 20px;
 }
